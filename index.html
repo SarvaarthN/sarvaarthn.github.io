@@ -459,6 +459,16 @@
             font-size: 1.3rem;
             margin-bottom: 0.5rem;
         }
+        .education-card .date-range {
+            font-family: 'Fira Code', monospace;
+            color: var(--accent-2);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+        .education-card p {
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
         .institution {
             color: var(--accent-2);
             font-size: 1.1rem;
@@ -541,6 +551,7 @@
                 <li><a href="#home">home()</a></li>
                 <li><a href="#projects">projects[]</a></li>
                 <li><a href="#achievements">achievements++</a></li>
+                <li><a href="#experience">experience{}</a></li>
                 <li><a href="#contact">contact()</a></li>
             </ul>
         </div>
@@ -605,12 +616,28 @@
 
                     <div class="project-card" onclick="this.classList.toggle('expanded')">
                         <h3>
-                            SDR on FPGA
+                            Ambient Backscatter
                             <div style="display: flex; align-items: center; gap: 0.5rem;">
                                 <span class="status-indicator"></span>
                                 <span class="expand-icon">+</span>
                             </div>
                         </h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">RF</span>
+                            <span class="tech-tag">GNU Radio</span>
+                            <span class="tech-tag">HackRF One</span>
+                        </div>
+                        <div>Battery-free ambient backscatter communication system in the FM broadcast band</div>
+                        <div class="project-details">
+                            <p>Developing a battery-free ambient backscatter communication system operating in the FM broadcast band.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 4rem;">Past Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" onclick="this.classList.toggle('expanded')">
+                        <h3>SDR on FPGA <span class="expand-icon">+</span></h3>
                         <div class="tech-stack">
                             <span class="tech-tag">Verilog</span>
                             <span class="tech-tag">HackRF One</span>
@@ -626,10 +653,7 @@
                             <span>💻</span> View on GitHub
                         </a>
                     </div>
-                </div>
 
-                <h2 class="section-title" style="margin-top: 4rem;">Past Projects</h2>
-                <div class="projects-grid">
                     <div class="project-card" onclick="this.classList.toggle('expanded')">
                         <h3>12 Hr Clock <span class="expand-icon">+</span></h3>
                         <div class="tech-stack">
@@ -707,6 +731,29 @@
             </div>
         </section>
 
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience Log</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <h3>Electronics Head</h3>
+                        <div class="institution">Society of Robotics and Automation, VJTI &mdash; Mumbai, India</div>
+                        <div class="date-range">June 2026 &ndash; Present</div>
+                        <p>Led electronics inventory management and procurement for SRA projects.</p>
+                        <p>Mentored multidisciplinary teams in electronics design and RF engineering.</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>Hardware Design Intern</h3>
+                        <div class="institution">Edith Defence Systems &mdash; Mumbai, India</div>
+                        <div class="date-range">May 2026 &ndash; July 2026</div>
+                        <p>Designed PCBs for drone electronics, including Battery Eliminator Circuits (BECs), ESCs, and a smoke stopper circuit.</p>
+                        <p>Contributed to BLDC motor FOC development and created embedded firmware for hardware bring-up and testing.</p>
+                        <p>Made minor firmware contributions, including adding hardware targets and UI improvements for ExpressLRS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="education">
             <div class="container">
                 <h2 class="section-title">Education</h2>
@@ -715,12 +762,12 @@
                         <h3>B.Tech in Electronics and Telecommunication</h3>
                         <div class="institution">Veermata Jijabai Technological Institute, Mumbai</div>
                         <div>Minor in Cybersecurity</div>
-                        <div class="score">CGPA: 9.78 / 10.0</div>
+                        <div class="score">CGPA: 9.66 / 10.0</div>
                     </div>
                     <div class="education-card">
                         <h3>B.S. in Data Science and Application</h3>
                         <div class="institution">Indian Institute of Technology, Madras (Correspondence)</div>
-                        <div class="score">CGPA: 9.81 / 10.0</div>
+                        <div class="score">CGPA: 9.61 / 10.0</div>
                     </div>
                     <div class="education-card">
                         <h3>Grade XII - CBSE</h3>
